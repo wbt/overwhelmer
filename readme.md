@@ -60,7 +60,7 @@ Runs #9-10 repeated the behavior of run #6.  The "could not connect" failure too
 - The sum of migration "total cost" reports should equal the difference in account balance before - after the migration.
 
 ## Issues Illustrated
- - Ganache hangs when there are too many outstanding transactions.  Once sufficiently overwhelmed, it does not appear to recover.
- - How many transactions counts as too many is not deterministic.
- - The "TX COUNT" and "BALANCE" fields do not necessarily reflect the accurate TX COUNT or balance as of the block shown in "Current Block." There is no support to help the user develop an accurate mental model of whether or not the displayed information is accurate or not, or when there's an update.  
- - The bottom-line "total cost" output from Truffle Migrate is incorrect, showing 0 when the actual amount of ETH used in a migration was multiple complete ETH.
+ - Ganache hangs when there are too many outstanding transactions.  Once sufficiently overwhelmed, it does not appear to recover. (Appears to be [Ganache issue #947](https://github.com/trufflesuite/ganache/issues/947).)
+ - How many transactions counts as too many is not deterministic, at least as far as I can tell (it may be influenced by OS processes etc. running in the background).
+ - The "TX COUNT" and "BALANCE" fields do not necessarily reflect the accurate TX COUNT or balance as of the block shown in "Current Block." There is no support to help the user develop an accurate mental model of whether or not the displayed information is accurate or not, or when there's an update.  (Filed as [Ganache issue #1131](https://github.com/trufflesuite/ganache/issues/1131).)
+ - The bottom-line "total cost" output from Truffle Migrate is incorrect, showing 0 when the actual amount of ETH used in a migration was multiple complete ETH. (Filed as [Truffle issue #1728](https://github.com/trufflesuite/truffle/issues/1728).)
