@@ -9,7 +9,6 @@ module.exports = function(deployer) {
     deployer.then(function() {
         return Overwhelmer.deployed();
     }).then(function(instance) {
-        instance.defaultTxParams = Overwhelmer.defaults();
         var transactionPromises = [];
         for (var sequence = 0; sequence < transactionsToRun; sequence++) {
             transactionPromises.push(kickoffTransaction(instance, sequence, overwrite));
