@@ -1,6 +1,6 @@
 
 # Summary
-This is a test repository intended to illustrate some bugs in Ganache, and may be used for load testing other Ethereum clients with appropriate adaptation.
+This is a test repository intended to illustrate some bugs in Ganache, and may be used for load testing other Ethereum clients with appropriate adaptation in instructions/configuration etc.
 
   ## Steps to reproduce:
 1. Install Truffle (`npm i truffle -g`).  You don't need drizzle and may have a narrower potential issue scope (better) without it.
